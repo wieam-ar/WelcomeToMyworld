@@ -15,7 +15,6 @@
     <header>
         <div class="container-fluid">
             <div class="row">
-
                 <div class="col-md-12">
                     <nav class="navbar navbar-expand-lg ">
                         <div class="container-fluid">
@@ -52,6 +51,7 @@
             </div>
         </div>
     </header>
+    <!-- section 1 -->
     <section id="hero">
         <h1>Welcome to my creative universe —</h1>
         <p>where every click unveils a new story, a new skill, a new spark.</p>
@@ -60,13 +60,12 @@
 
     <!-- Floating Letters -->
     <div class="floating-letters" id="floating-letters"></div>
-    <!-- about-section -->
+    <!-- section 2 -->
     <section id="about-section" style="padding-top: 50px;">
         <div class="section-title">
             <h2>About Me</h2>
             <div class="title-underline"></div>
         </div>
-
         <div class="about-container">
             <div class="about-content ">
                 <h3>Hi, I'm Wieam Aarika</h3>
@@ -89,6 +88,7 @@
             </div>
         </div>
     </section>
+    <!-- section 3 -->
     <section id="portfolio-section" style="padding-top: 30px;">
         <div class="section-title">
             <h2> My Projects</h2>
@@ -105,39 +105,31 @@
         <div class="dashed-frame"></div>
 
         <!-- Main Container -->
-        <div class="container">
+        <div class="container MainContainer">
             <div class="cards-grid">
                 <!-- Digital Screens -->
                 <div class="digital-screen screen-1">
 
                 </div>
-
-
                 <div class="digital-screen screen-2">
 
                 </div>
-
                 <div class="digital-screen screen-3">
 
                 </div>
-
                 <div class="digital-screen screen-4">
 
                 </div>
-
                 <!-- Physical Cards -->
                 <div class="physical-card card-1">
 
                 </div>
-
                 <div class="physical-card card-2">
 
                 </div>
-
                 <div class="physical-card card-3">
 
                 </div>
-
                 <div class="physical-card card-4">
 
                 </div>
@@ -145,10 +137,10 @@
         </div>
 
     </section>
+    <!-- section 4 -->
     <section id="skills">
         <div class="skills-container">
             <h1 class="skills-title">MY SKILLS</h1>
-
             <div class="carousel-container">
                 <!-- First Row - Moving Right to Left -->
                 <div class="carousel-row row-1">
@@ -206,7 +198,6 @@
 
                     </div>
                 </div>
-
                 <!-- Second Row - Moving Left to Right -->
                 <div class="carousel-row row-2">
                     <div class="carousel-track">
@@ -266,11 +257,11 @@
             </div>
         </div>
     </section>
-    <!-- Contact Section -->
+    <!-- section 5 -->
     <section class="contact-section">
-        
+
         <div class="container ">
-           
+
             <div class="contact-content">
                 <!-- Contact Form -->
                 <div class="contact-form">
@@ -306,16 +297,16 @@
                     </p>
                     <ul class="contact-details">
                         <li>
-                            <span class="icon">📍</span>
+                            <span class="icon p-3">📍</span>
                             Salé, Rabat - Morocco
                         </li>
                         <li>
-                            <span class="icon">📧</span>
-                            northanteam@gmail.com
+                            <span class="icon p-3">📧</span>
+                            aarikawieam@gmail.com
                         </li>
                         <li>
-                            <span class="icon">📞</span>
-                            Phone: +212 6 XX XX XX 168
+                            <span class="icon p-3">📞</span>
+                            Phone: +212 6 04 80 41 45
                         </li>
                     </ul>
                 </div>
@@ -356,10 +347,10 @@
                 <div class="footer-section">
                     <h3>Follow me</h3>
                     <div class="social-icons">
-                        <a href="#" class="social-icon">🐦</a>
-                        <a href="#" class="social-icon">📧</a>
-                        <a href="#" class="social-icon">💼</a>
-                        <a href="#" class="social-icon">📱</a>
+                        <a href="#" class="social-icon "></a>
+                        <a href="#" class="social-icon"></a>
+                        <a href="#" class="social-icon"></a>
+                        <a href="#" class="social-icon"></a>
                     </div>
                 </div>
             </div>
