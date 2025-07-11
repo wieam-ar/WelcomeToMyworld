@@ -61,7 +61,7 @@
     <!-- Floating Letters -->
     <div class="floating-letters" id="floating-letters"></div>
     <!-- about-section -->
-    <section id="about-section " >
+    <section id="about-section" style="padding-top: 50px;">
         <div class="section-title">
             <h2>About Me</h2>
             <div class="title-underline"></div>
@@ -89,8 +89,8 @@
             </div>
         </div>
     </section>
-    <section id="portfolio-section">
-        <div class="title-container">
+    <section id="portfolio-section" style="padding-top: 30px;">
+        <div class="title-container p-5">
             <h1 class="main-title">
                 <span id="typewriter" class="typewriter">Projects</span>
                 <div class="title-underline"></div>
@@ -267,6 +267,103 @@
             </div>
         </div>
     </section>
+     <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h1 class="form-title">Send Me a Message</h1>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="fullName">Full name :</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone :</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Leave a Message :</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Form</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2 class="info-title">GET IN TOUCH</h2>
+                    <h3 class="info-subtitle">Let's Connect & Collaborate!</h3>
+                    <p class="info-description">
+                        Have a project in mind or just want to say HI? My inbox is open to creative conversations, 
+                        tech talk, or anything in between.
+                    </p>
+                    <ul class="contact-details">
+                        <li>
+                            <span class="icon">📍</span>
+                            Salé, Rabat - Morocco
+                        </li>
+                        <li>
+                            <span class="icon">📧</span>
+                            northanteam@gmail.com
+                        </li>
+                        <li>
+                            <span class="icon">📞</span>
+                            Phone: +212 6 XX XX XX 168
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PORTFOLIO</h3>
+                    <p>Creating digital experiences with purpose and passion. Explore a portfolio built with clean code, creative design, and a touch of innovation.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>SERVICES</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">App Prototyping</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Branding & Identity</a></li>
+                        <li><a href="#">Frontend Development</a></li>
+                        <li><a href="#">Portfolio Building Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Competitions & Events</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow me</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">📧</a>
+                        <a href="#" class="social-icon">💼</a>
+                        <a href="#" class="social-icon">📱</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="./includes/javascript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
