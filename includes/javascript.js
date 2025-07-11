@@ -277,3 +277,26 @@
         document.querySelectorAll('.carousel-track').forEach(track => {
             observer.observe(track);
         });
+
+          // Add click effects to project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                this.style.background = 'linear-gradient(135deg, rgba(138, 43, 226, 0.3), rgba(255, 107, 107, 0.3))';
+                
+                setTimeout(() => {
+                    this.style.transform = '';
+                    this.style.background = '';
+                }, 200);
+            });
+        });
+        // Add loading animation to random cards
+        function randomizeLoading() {
+            document.querySelectorAll('.loading-bar').forEach(bar => {
+                const delay = Math.random() * 3;
+                bar.style.animationDelay = delay + 's';
+            });
+        }
+
+        randomizeLoading();
+        setInterval(randomizeLoading, 5000);
