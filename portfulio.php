@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-p0XJ7pFvN+HpJr+3bSxWJZ2QOZ4SzWnccDdGy5WrAv8eNR8F/9+aWQQYvF+bvC1ebB+v6CVPfH/NXAlCP9xB4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 
 <body>
     <header>
@@ -297,15 +299,15 @@
                     </p>
                     <ul class="contact-details">
                         <li>
-                            <span class="icon p-3">📍</span>
+                            <span class="icon p-3"><i class="fas fa-map-marker-alt"></i></span>
                             Salé, Rabat - Morocco
                         </li>
                         <li>
-                            <span class="icon p-3">📧</span>
+                            <span class="icon p-3"><i class="fas fa-envelope"></i></span>
                             aarikawieam@gmail.com
                         </li>
                         <li>
-                            <span class="icon p-3">📞</span>
+                            <span class="icon p-3"><i class="fas fa-phone-alt"></i></span>
                             Phone: +212 6 04 80 41 45
                         </li>
                     </ul>
@@ -347,10 +349,10 @@
                 <div class="footer-section">
                     <h3>Follow me</h3>
                     <div class="social-icons">
-                        <a href="#" class="social-icon "></a>
-                        <a href="#" class="social-icon"></a>
-                        <a href="#" class="social-icon"></a>
-                        <a href="#" class="social-icon"></a>
+                        <a href="" class="social-icon "><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/wiam-aarika-a2977432b/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/wieam-ar" class="social-icon"> <i class="fab fa-github" style="color: wheat;"></i></a>
+                        <a href="+2120604804145" class="social-icon"><i class="fas fa-phone-alt"></i></a>
                     </div>
                 </div>
             </div>
