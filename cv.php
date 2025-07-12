@@ -1,6 +1,6 @@
 <?php
 // Get the file path
-$file = 'files/cv_wieam.pdf'; // change the path and name as needed
+$file = 'files/cvdoload.pdf'; // change the path and name as needed
 
 // Check if file exists
 if (file_exists($file)) {
