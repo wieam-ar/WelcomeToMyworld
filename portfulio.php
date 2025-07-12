@@ -33,13 +33,13 @@
                                         <a class="nav-link" href="#about-section">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#portfolio-section">Projects</a>
+                                        <a class="nav-link" href="#projects">Projects</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#skills">skills</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#competitions">Competitions & Events</a>
+                                        <a class="nav-link" href="#portfolio-section">Competitions & Events</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#contact">Contact</a>
@@ -79,7 +79,7 @@
                 </p>
                 <div class="button-container">
                     <a href="#contact" class="btn btn-primary">Hire Me</a>
-                    <a href="#cv" class="btn btn-secondary">My CV</a>
+                    <a href="cv.php" class="btn btn-secondary">My CV</a>
                 </div>
             </div>
 
@@ -90,10 +90,65 @@
             </div>
         </div>
     </section>
+    <!-- projects -->
+    <section class="portfolio-section" id="projects">
+        <div class="section-title">
+            <h2>My Own Projects</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="projects-container">
+            <div class="projects-grid">
+                <div class="project-item" data-project="ecommerce">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=600&fit=crop" alt="E-Commerce App" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">E-Commerce App</h3>
+                        <p class="project-description">Full-stack MERN shop with real-time cart and payment integration</p>
+                    </div>
+                </div>
+
+                <div class="project-item" data-project="dashboard">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=600&fit=crop" alt="Analytics Dashboard" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <p class="project-description">React dashboard with interactive charts and real-time data visualization</p>
+                    </div>
+                </div>
+
+                <div class="project-item" data-project="mobile">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&h=800&fit=crop" alt="Mobile App" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Mobile Social App</h3>
+                        <p class="project-description">React Native app with social features, real-time messaging and photo sharing</p>
+                    </div>
+                </div>
+
+                <div class="project-item" data-project="ai">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=600&fit=crop" alt="AI Platform" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">AI Platform</h3>
+                        <p class="project-description">Machine learning platform with Python backend and TensorFlow integration</p>
+                    </div>
+                </div>
+
+                <div class="project-item" data-project="blockchain">
+                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=500&h=600&fit=crop" alt="Blockchain App" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Blockchain DApp</h3>
+                        <p class="project-description">Decentralized application with Smart contracts and Web3 integration</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <button class="export-btn">Export More</button>
+            </div>
+        </div>
+    </section>
     <!-- section 3 -->
     <section id="portfolio-section" style="padding-top: 30px;">
         <div class="section-title">
-            <h2> My Projects</h2>
+            <h2> Competitions & Events</h2>
             <div class="title-underline"></div>
         </div>
         <!-- Background Resort -->
@@ -260,7 +315,7 @@
         </div>
     </section>
     <!-- section 5 -->
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
 
         <div class="container ">
 
@@ -338,12 +393,12 @@
                 <div class="footer-section">
                     <h3>Company</h3>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Competitions & Events</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about-section">About me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio-section">Competitions & Events</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
