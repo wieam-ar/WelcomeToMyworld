@@ -141,7 +141,7 @@
             </div>
 
             <div style="text-align: center;">
-                <button class="export-btn">Export More</button>
+                <a href="https://github.com/wieam-ar" class="export-btn">Export More</a>
             </div>
         </div>
     </section>
@@ -323,7 +323,7 @@
                 <!-- Contact Form -->
                 <div class="contact-form">
                     <h1 class="form-title">Send Me a Message</h1>
-                    <form id="contactForm">
+                    <form id="contactForm" action="mail.php" method="POST">
                         <div class="form-group">
                             <label for="fullName">Full name :</label>
                             <input type="text" id="fullName" name="fullName" required>
