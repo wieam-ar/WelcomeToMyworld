@@ -100,18 +100,18 @@
         <div class="projects-container">
             <div class="projects-grid">
                 <div class="project-item" data-project="ecommerce">
-                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=600&fit=crop" alt="E-Commerce App" class="project-image">
+                    <img src="./pictures/ride.jpg" alt="ride" class="project-image">
                     <div class="project-overlay">
-                        <h3 class="project-title">E-Commerce App</h3>
-                        <p class="project-description">Full-stack MERN shop with real-time cart and payment integration</p>
+                        <h3 class="project-title">Safe Ride site</h3>
+                        <p class="project-description">Safe Ride — your smart companion for safe and secure travel.</p>
                     </div>
                 </div>
 
                 <div class="project-item" data-project="dashboard">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=600&fit=crop" alt="Analytics Dashboard" class="project-image">
+                    <img src="./pictures/home.jpg" alt="Home Decord" class="project-image">
                     <div class="project-overlay">
-                        <h3 class="project-title">Analytics Dashboard</h3>
-                        <p class="project-description">React dashboard with interactive charts and real-time data visualization</p>
+                        <h3 class="project-title">Home decoration </h3>
+                        <p class="project-description">Where elegance meets comfort — your dream home begins here.</p>
                     </div>
                 </div>
 
@@ -124,24 +124,24 @@
                 </div>
 
                 <div class="project-item" data-project="ai">
-                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=600&fit=crop" alt="AI Platform" class="project-image">
+                    <img src="./pictures/hotel.jpg" alt="Hotel " class="project-image">
                     <div class="project-overlay">
-                        <h3 class="project-title">AI Platform</h3>
-                        <p class="project-description">Machine learning platform with Python backend and TensorFlow integration</p>
+                        <h3 class="project-title">Hotel </h3>
+                        <p class="project-description">Experience comfort, luxury, and unforgettable stays.</p>
                     </div>
                 </div>
 
                 <div class="project-item" data-project="blockchain">
-                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=500&h=600&fit=crop" alt="Blockchain App" class="project-image">
+                    <img src="./pictures/portfo.png" alt="portfolio" class="project-image">
                     <div class="project-overlay">
-                        <h3 class="project-title">Blockchain DApp</h3>
-                        <p class="project-description">Decentralized application with Smart contracts and Web3 integration</p>
+                        <h3 class="project-title">Portfolio</h3>
+                        <p class="project-description">Crafting code with creativity and precision.</p>
                     </div>
                 </div>
             </div>
 
             <div style="text-align: center;">
-                <a href="https://github.com/wieam-ar" class="export-btn">Export More</a>
+                <a href="https://github.com/wieam-ar" class="export-btn" style="text-decoration: none;">Export More</a>
             </div>
         </div>
     </section>
