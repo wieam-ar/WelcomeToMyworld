@@ -411,6 +411,11 @@
                     </div>
                 </div>
             </div>
+            <div class="footer-section d-fles justify-center ">
+                <p class="text-center">
+                    &copy;Tous Droit Reserver-Wiam AARIKA
+                </p>
+            </div>
         </div>
     </footer>
 
