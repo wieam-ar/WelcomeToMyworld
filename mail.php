@@ -9,14 +9,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email   = htmlspecialchars($_POST['email'] ?? '');
     $phone   = htmlspecialchars($_POST['phone'] ?? '');
     $message = nl2br(htmlspecialchars($_POST['message'] ?? ''));
+$mailBody = "
 
-    $mailBody = "
-        <h2>Reservation Confirmation</h2>
-        <p><strong>Full Name:</strong> {$name}</p>
-        <p><strong>Email:</strong> {$email}</p>
-        <p><strong>Phone:</strong> {$phone}</p>
-        <p><strong>Message:</strong><br>{$message}</p>
-    ";
+  <div style='max-width: 600px; margin: auto; background: linear-gradient(135deg, #2d2d4d, #1a1a2e); padding: 30px; border-radius: 10px; box-shadow: 0 0 20px rgba(128,0,255,0.4);'>
+
+    <h2 style='color: #bb86fc; text-align: center; text-shadow: 0 0 8px #9b59b6;'> Reservation Confirmation</h2>
+
+    <p style='font-size: 16px;'><strong> Full Name:</strong> <span style='color: #e0e0ff;'>{$name}</span></p>
+    <p style='font-size: 16px;'><strong> Email:</strong> <span style='color: #e0e0ff;'>{$email}</span></p>
+    <p style='font-size: 16px;'><strong> Phone:</strong> <span style='color: #e0e0ff;'>{$phone}</span></p>
+
+    <p style='font-size: 16px; margin-top: 20px;'><strong>📝 Message:</strong></p>
+    <div style='background-color: #292945; padding: 15px; border-radius: 8px; font-size: 15px; color: #ccccff; box-shadow: inset 0 0 10px #3d3d5c;'>
+      " . nl2br(htmlspecialchars($message)) . "
+    </div>
+
+    <p style='margin-top: 40px; font-size: 13px; color: #8888aa; text-align: center;'>Thank you for choosing us! </p>
+
+  </div>
+
+";
+
 
     $mail = new PHPMailer(true);
 

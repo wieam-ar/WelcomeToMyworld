@@ -966,14 +966,7 @@ header {
 }
 
 .digital-screen.screen-3::after {
-    background-image:url('../pictures/portfoli.png');
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-}
-
-.digital-screen.screen-4::after {
-   background-image:url('../pictures/certif.jpg');
+    background-image:url('../pictures/me.jpg');
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;

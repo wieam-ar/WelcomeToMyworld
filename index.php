@@ -85,7 +85,7 @@
 
             <div class="about-image">
                 <div class="image-container">
-                    <img src="./pictures/me.jpg" alt="Wieam Aarika - Full Stack Developer">
+                    <img src="./pictures/skills.jpg" alt="Wieam Aarika - Full Stack Developer">
                 </div>
             </div>
         </div>
@@ -174,12 +174,10 @@
                 <div class="digital-screen screen-3">
 
                 </div>
-                <div class="digital-screen screen-4">
-
-                </div>
+ 
                 <!-- Physical Cards -->
                 <div class="physical-card card-1">
-                    <img src="./pictures/me.jpg" alt="portfolio" class="project-image">
+                    <img src="./pictures/agadir.jpg" alt="portfolio" class="project-image">
 
                 </div>
                 <div class="physical-card card-2">
