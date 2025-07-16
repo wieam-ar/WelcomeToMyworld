@@ -39,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->AltBody = strip_tags($mailBody);
 
         $mail->send();
+        header("Location: index.php");
         exit();
     } catch (Exception $e) {
         error_log("Mailer Error: {$mail->ErrorInfo}");

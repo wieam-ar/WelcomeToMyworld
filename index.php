@@ -179,15 +179,19 @@
                 </div>
                 <!-- Physical Cards -->
                 <div class="physical-card card-1">
+                    <img src="./pictures/me.jpg" alt="portfolio" class="project-image">
 
                 </div>
                 <div class="physical-card card-2">
+                    <img src="./pictures/stad1.jpg" alt="portfolio" class="project-image">
 
                 </div>
                 <div class="physical-card card-3">
+                    <img src="./pictures/compititio.jpg" alt="portfolio" class="project-image">
 
                 </div>
                 <div class="physical-card card-4">
+                    <img src="./pictures/forum.jpg" alt="portfolio" class="project-image">
 
                 </div>
             </div>
