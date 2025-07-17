@@ -79,7 +79,8 @@
                 </p>
                 <div class="button-container">
                     <a href="#contact" class="btn btn-primary">Hire Me</a>
-                    <a href="cv.php" class="btn btn-secondary">My CV</a>
+                    <a href="cv.php" class="btn btn-primary">My CV</a>
+                    
                 </div>
             </div>
 
@@ -155,7 +156,6 @@
         <div class="background-resort"></div>
 
         <!-- Glow Effects -->
-        <div class="glow-purple"></div>
         <div class="glow-blue"></div>
 
         <!-- Dashed Frame -->

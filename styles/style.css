@@ -820,19 +820,6 @@ header {
 }
 
 
-/* Glow Effects */
-.glow-purple {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(157, 78, 221, 0.3) 0%, transparent 70%);
-    border-radius: 50%;
-    filter: blur(40px);
-    animation: floatGlow 8s ease-in-out infinite;
-}
-
 .glow-blue {
     position: absolute;
     bottom: 20%;
@@ -1031,7 +1018,7 @@ header {
         gap: 25px;
     }
     
-    .glow-purple,
+    
     .glow-blue {
         width: 250px;
         height: 250px;
@@ -1086,7 +1073,7 @@ header {
         height: 250px;
     }
     
-    .glow-purple,
+    
     .glow-blue {
         width: 200px;
         height: 200px;
@@ -1118,12 +1105,7 @@ header {
         bottom: 10px;
     }
     
-    .glow-purple {
-        top: 10%;
-        left: 5%;
-        width: 150px;
-        height: 150px;
-    }
+   
     
     .glow-blue {
         bottom: 10%;
