@@ -406,7 +406,6 @@
                 <div class="footer-section">
                     <h3>Follow me</h3>
                     <div class="social-icons">
-                        <a href="" class="social-icon "><i class="fab fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/wiam-aarika-a2977432b/" class="social-icon"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/wieam-ar" class="social-icon"> <i class="fab fa-github" style="color: wheat;"></i></a>
                         <a href="+2120604804145" class="social-icon"><i class="fas fa-phone-alt"></i></a>
