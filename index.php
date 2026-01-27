@@ -86,7 +86,7 @@
 
             <div class="about-image">
                 <div class="image-container">
-                    <img src="./pictures/skills.jpg" alt="Wieam Aarika - Full Stack Developer">
+                    <img src="./pictures/image.png" alt="Wieam Aarika - Mobile Developer">
                 </div>
             </div>
         </div>
@@ -97,54 +97,89 @@
             <h2>My Own Projects</h2>
             <div class="title-underline"></div>
         </div>
+<div class="projects-container">
+    <div class="projects-grid">
 
-        <div class="projects-container">
-            <div class="projects-grid">
-                <div class="project-item" data-project="ecommerce">
-                    <img src="./pictures/ride.jpg" alt="ride" class="project-image">
-                    <div class="project-overlay">
-                        <h3 class="project-title">Safe Ride site</h3>
-                        <p class="project-description">Safe Ride — your smart companion for safe and secure travel.</p>
-                    </div>
-                </div>
-
-                <div class="project-item" data-project="dashboard">
-                    <img src="./pictures/home.jpg" alt="Home Decord" class="project-image">
-                    <div class="project-overlay">
-                        <h3 class="project-title">Home decoration </h3>
-                        <p class="project-description">Where elegance meets comfort — your dream home begins here.</p>
-                    </div>
-                </div>
-
-                <div class="project-item" data-project="mobile">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&h=800&fit=crop" alt="Mobile App" class="project-image">
-                    <div class="project-overlay">
-                        <h3 class="project-title">Mobile Social App</h3>
-                        <p class="project-description">React Native app with social features, real-time messaging and photo sharing</p>
-                    </div>
-                </div>
-
-                <div class="project-item" data-project="ai">
-                    <img src="./pictures/hotel.jpg" alt="Hotel " class="project-image">
-                    <div class="project-overlay">
-                        <h3 class="project-title">Hotel </h3>
-                        <p class="project-description">Experience comfort, luxury, and unforgettable stays.</p>
-                    </div>
-                </div>
-
-                <div class="project-item" data-project="blockchain">
-                    <img src="./pictures/portfo.png" alt="portfolio" class="project-image">
-                    <div class="project-overlay">
-                        <h3 class="project-title">Portfolio</h3>
-                        <p class="project-description">Crafting code with creativity and precision.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div style="text-align: center;">
-                <a href="https://github.com/wieam-ar" class="export-btn" style="text-decoration: none;">Export More</a>
+        <!-- KinderWorld -->
+        <div class="project-item" data-project="education">
+            <img src="./pictures/kinderworld.png" alt="KinderWorld" class="project-image">
+            <div class="project-overlay">
+                <h3 class="project-title">KinderWorld</h3>
+                <p class="project-description">
+                    KinderWorld is an educational application designed for young children to learn letters, numbers, shapes, and colors in a fun, safe, and interactive way.
+                </p>
             </div>
         </div>
+
+        <!-- Swiply -->
+        <div class="project-item" data-project="social">
+            <img src="./pictures/swiply.png" alt="Swiply" class="project-image">
+            <div class="project-overlay">
+                <h3 class="project-title">Swiply</h3>
+                <p class="project-description">
+                    Swiply is a social mobile app that helps people make new friends through a simple and modern swipe-based system, offering a smooth and engaging user experience.
+                </p>
+            </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="project-item" data-project="portfolio">
+            <img src="./pictures/rihlaapp.png" alt="rihlaapp" class="project-image">
+            <div class="project-overlay">
+                <h3 class="project-title">Rihlaapp</h3>
+                <p class="project-description">
+                    A personal organasation app thats help me to organize my daily tasks.
+                </p>
+            </div>
+        </div>
+
+        <!-- Hydromatle -->
+        <div class="project-item" data-project="mobile">
+            <img src="./pictures/hydromatle.png" alt="Hydromatle" class="project-image">
+            <div class="project-overlay">
+                <h3 class="project-title">Hydromatle</h3>
+                <p class="project-description">
+                    HydroMate is an Android application designed and developed from scratch to help users track their daily water intake and stay hydrated.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bankify -->
+        <div class="project-item" data-project="finance">
+            <img src="./pictures/Bankify.png" alt="Bankify" class="project-image">
+            <div class="project-overlay">
+                <h3 class="project-title">Bankify</h3>
+                <p class="project-description">
+                    A modern banking web application integrating advanced performance optimization and strong security solutions.
+                </p>
+            </div>
+        </div>
+
+        <!-- TaxiBeex -->
+        <div class="project-item" data-project="transport">
+            <img src="./pictures/taxibee.png" alt="TaxiBeex" class="project-image">
+            <div class="project-overlay">
+                <h3 class="project-title">TaxiBeex</h3>
+                <p class="project-description">
+                    A smart ride-booking platform that connects passengers with drivers for fast, reliable, and safe transportation.
+                </p>
+            </div>
+        </div>
+
+        <!-- Safe Ride -->
+        <div class="project-item" data-project="web">
+            <img src="./pictures/safeRide.png" alt="Safe Ride" class="project-image">
+            <div class="project-overlay">
+                <h3 class="project-title">Safe Ride</h3>
+                <p class="project-description">
+                    Safe Ride is a web platform designed to promote secure and reliable travel experiences.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
     </section>
     <!-- section 3 -->
     <section id="portfolio-section" style="padding-top: 30px;">
@@ -164,14 +199,16 @@
         <!-- Main Container -->
         <div class="container MainContainer">
             <div class="cards-grid">
-                <!-- Digital Screens -->
-                <div class="digital-screen screen-1">
+           <div class="physical-card card-1">
+                    <img src="./pictures/me.jpg" alt="portfolio" class="project-image">
 
                 </div>
-                <div class="digital-screen screen-2">
+                <div class="physical-card card-2">
+                    <img src="./pictures/certif.jpg" alt="portfolio" class="project-image">
 
                 </div>
-                <div class="digital-screen screen-3">
+                <div class="physical-card card-3">
+                    <img src="./pictures/chefstad.jpg" alt="portfolio" class="project-image">
 
                 </div>
  
@@ -190,6 +227,26 @@
                 </div>
                 <div class="physical-card card-4">
                     <img src="./pictures/forum.jpg" alt="portfolio" class="project-image">
+
+                </div>
+                <div class="physical-card card-5">
+                    <img src="./pictures/formatrice.jpeg" alt="portfolio" class="project-image">
+
+                </div>
+                 <div class="physical-card card-5">
+                    <img src="./pictures/formatrice2.jpeg" alt="portfolio" class="project-image">
+
+                </div>
+                 <div class="physical-card card-5">
+                    <img src="./pictures/stand.jpeg" alt="portfolio" class="project-image">
+
+                </div>
+                <div class="physical-card card-5">
+                    <img src="./pictures/stadier_caf.jpeg" alt="portfolio" class="project-image">
+
+                </div>
+                <div class="physical-card card-5">
+                    <img src="./pictures/stand3.jpeg" alt="portfolio" class="project-image">
 
                 </div>
             </div>
@@ -363,10 +420,7 @@
                             <span class="icon p-3"><i class="fas fa-envelope"></i></span>
                             aarikawieam@gmail.com
                         </li>
-                        <li>
-                            <span class="icon p-3"><i class="fas fa-phone-alt"></i></span>
-                            Phone: +212 6 04 80 41 45
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -408,7 +462,6 @@
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/wiam-aarika-a2977432b/" class="social-icon"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/wieam-ar" class="social-icon"> <i class="fab fa-github" style="color: wheat;"></i></a>
-                        <a href="+2120604804145" class="social-icon"><i class="fas fa-phone-alt"></i></a>
                     </div>
                 </div>
             </div>
