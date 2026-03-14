@@ -530,64 +530,155 @@ section { padding: 120px 0; position: relative; }
 /* ══════════════════════════════════════════════
    CONTACT
 ══════════════════════════════════════════════ */
+/* ══════════════════════════════════════════════
+   CONTACT — Social Cards
+══════════════════════════════════════════════ */
 #contact {
   background: var(--bg-2);
   border-top: 1px solid var(--border);
 }
-
-.contact__grid {
-  display: grid; grid-template-columns: 1fr 1.2fr;
-  gap: 80px; align-items: start;
+ 
+.contact__centered {
+  display: flex; flex-direction: column; align-items: center;
+  text-align: center;
 }
-
-.contact__details { margin: 36px 0; display: flex; flex-direction: column; gap: 16px; }
-.contact__details li { display: flex; align-items: center; gap: 14px; color: var(--text-2); font-size: 0.95rem; }
-.contact__details a { color: var(--text-2); transition: color 0.2s; }
-.contact__details a:hover { color: var(--accent-2); }
-.contact__icon {
-  width: 36px; height: 36px; border-radius: 10px;
-  background: rgba(99,102,241,0.12); border: 1px solid rgba(99,102,241,0.2);
-  display: flex; align-items: center; justify-content: center;
-  color: var(--accent-2); font-size: 0.85rem; flex-shrink: 0;
+.contact__title { text-align: center; }
+.contact__subtitle {
+  max-width: 460px; text-align: center;
+  margin-bottom: 56px !important;
 }
-.contact__socials { display: flex; gap: 10px; }
-.social-btn {
-  width: 42px; height: 42px; border-radius: 10px;
-  background: var(--surface); border: 1px solid var(--border);
+ 
+/* ── Cards grid ── */
+.connect__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%; max-width: 780px;
+}
+ 
+/* ── Base card ── */
+.connect-card {
+  display: flex; align-items: center; gap: 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  text-decoration: none; color: inherit;
+  transition: var(--transition);
+  position: relative; overflow: hidden;
+}
+.connect-card::before {
+  content: '';
+  position: absolute; inset: 0;
+  opacity: 0; transition: opacity 0.3s;
+  border-radius: var(--radius-lg);
+}
+.connect-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+.connect-card:hover::before { opacity: 1; }
+ 
+/* ── Icon circle ── */
+.connect-card__icon {
+  width: 52px; height: 52px; border-radius: 14px;
   display: flex; align-items: center; justify-content: center;
-  color: var(--text-2); font-size: 1rem;
+  font-size: 1.4rem; flex-shrink: 0;
   transition: var(--transition);
 }
-.social-btn:hover { background: var(--accent); border-color: var(--accent); color: #fff; transform: translateY(-3px); }
-
-.contact__form-wrap {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius-lg); padding: 40px;
+ 
+/* ── Body text ── */
+.connect-card__body {
+  display: flex; flex-direction: column; gap: 3px; flex: 1; text-align: left;
 }
-.contact__form { display: flex; flex-direction: column; gap: 20px; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.form-field { display: flex; flex-direction: column; gap: 8px; }
-.form-field label {
-  font-size: 0.82rem; font-weight: 500; color: var(--text-2);
-  letter-spacing: 0.04em; text-transform: uppercase;
+.connect-card__label {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--text-3);
 }
-.form-field input,
-.form-field textarea {
-  background: var(--bg); border: 1px solid var(--border);
-  border-radius: var(--radius); color: var(--text);
-  font-family: var(--font-body); font-size: 0.95rem;
-  padding: 13px 16px; transition: var(--transition);
-  outline: none;
+.connect-card__handle {
+  font-family: var(--font-display); font-size: 1rem;
+  font-weight: 600; color: var(--text);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
-.form-field input::placeholder,
-.form-field textarea::placeholder { color: var(--text-3); }
-.form-field input:focus,
-.form-field textarea:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px var(--accent-glow);
+ 
+/* ── Arrow ── */
+.connect-card__arrow {
+  font-size: 0.8rem; color: var(--text-3);
+  transition: var(--transition); flex-shrink: 0;
+  opacity: 0; transform: translateX(-6px);
 }
-.form-field textarea { height: 130px; resize: vertical; }
-
+.connect-card:hover .connect-card__arrow {
+  opacity: 1; transform: translateX(0);
+}
+.connect-card__arrow--pin { opacity: 1; transform: none; }
+ 
+/* ── LinkedIn ── */
+.connect-card--linkedin::before {
+  background: linear-gradient(135deg, rgba(10,102,194,0.12), transparent 60%);
+}
+.connect-card--linkedin:hover {
+  border-color: rgba(10,102,194,0.4);
+}
+.connect-card--linkedin .connect-card__icon {
+  background: rgba(10,102,194,0.15);
+  border: 1px solid rgba(10,102,194,0.25);
+  color: #4fa3e3;
+}
+.connect-card--linkedin:hover .connect-card__icon {
+  background: rgba(10,102,194,0.25);
+}
+ 
+/* ── GitHub ── */
+.connect-card--github::before {
+  background: linear-gradient(135deg, rgba(240,246,252,0.06), transparent 60%);
+}
+.connect-card--github:hover {
+  border-color: rgba(255,255,255,0.18);
+}
+.connect-card--github .connect-card__icon {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--text);
+}
+.connect-card--github:hover .connect-card__icon {
+  background: rgba(255,255,255,0.12);
+}
+ 
+/* ── Email ── */
+.connect-card--email::before {
+  background: linear-gradient(135deg, rgba(99,102,241,0.12), transparent 60%);
+}
+.connect-card--email:hover {
+  border-color: rgba(99,102,241,0.4);
+}
+.connect-card--email .connect-card__icon {
+  background: rgba(99,102,241,0.15);
+  border: 1px solid rgba(99,102,241,0.25);
+  color: var(--accent-2);
+}
+.connect-card--email:hover .connect-card__icon {
+  background: rgba(99,102,241,0.25);
+}
+ 
+/* ── Location ── */
+.connect-card--location {
+  cursor: default;
+}
+.connect-card--location::before {
+  background: linear-gradient(135deg, rgba(74,222,128,0.08), transparent 60%);
+}
+.connect-card--location:hover {
+  border-color: rgba(74,222,128,0.25);
+  transform: none;
+}
+.connect-card--location .connect-card__icon {
+  background: rgba(74,222,128,0.1);
+  border: 1px solid rgba(74,222,128,0.2);
+  color: var(--accent-3);
+}
+.connect-card--location .connect-card__arrow {
+  opacity: 0.4; transform: none; color: var(--accent-3);
+}
 
 /* ══════════════════════════════════════════════
    FOOTER
@@ -1125,57 +1216,72 @@ section { padding: 120px 0; position: relative; }
   </section>
 
   <!-- ══════════════ CONTACT ══════════════ -->
+  <!-- ══════════════ CONTACT ══════════════ -->
   <section id="contact">
     <div class="container">
       <div class="section-label"><span>05</span> Contact</div>
-      <div class="contact__grid">
-        <div class="contact__info">
-          <h2 class="section-title">Let's Build<br><em>Something Great</em></h2>
-          <p class="about__text">Have a project in mind or just want to say hi? My inbox is open — I'd love to hear from you.</p>
-          <ul class="contact__details">
-            <li>
-              <span class="contact__icon"><i class="fas fa-map-marker-alt"></i></span>
-              <span>Salé, Rabat — Morocco</span>
-            </li>
-            <li>
-              <span class="contact__icon"><i class="fas fa-envelope"></i></span>
-              <a href="mailto:aarikawieam@gmail.com">aarikawieam@gmail.com</a>
-            </li>
-          </ul>
-          <div class="contact__socials">
-            <a href="https://www.linkedin.com/in/wiam-aarika-a2977432b/" class="social-btn" target="_blank">
+      <div class="contact__centered">
+        <h2 class="section-title contact__title">Let's Build<br><em>Something Great</em></h2>
+        <p class="about__text contact__subtitle">Have a project in mind or just want to say hi?<br>Pick your favourite way to reach me.</p>
+ 
+        <div class="connect__cards">
+ 
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/wiam-aarika-a2977432b/" target="_blank" class="connect-card connect-card--linkedin">
+            <div class="connect-card__icon">
               <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/wieam-ar" class="social-btn" target="_blank">
+            </div>
+            <div class="connect-card__body">
+              <span class="connect-card__label">LinkedIn</span>
+              <span class="connect-card__handle">@wiam-aarika</span>
+            </div>
+            <div class="connect-card__arrow">
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </div>
+          </a>
+ 
+          <!-- GitHub -->
+          <a href="https://github.com/wieam-ar" target="_blank" class="connect-card connect-card--github">
+            <div class="connect-card__icon">
               <i class="fab fa-github"></i>
-            </a>
+            </div>
+            <div class="connect-card__body">
+              <span class="connect-card__label">GitHub</span>
+              <span class="connect-card__handle">@wieam-ar</span>
+            </div>
+            <div class="connect-card__arrow">
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </div>
+          </a>
+ 
+          <!-- Email -->
+          <a href="mailto:aarikawieam@gmail.com" class="connect-card connect-card--email">
+            <div class="connect-card__icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="connect-card__body">
+              <span class="connect-card__label">Email</span>
+              <span class="connect-card__handle">aarikawieam@gmail.com</span>
+            </div>
+            <div class="connect-card__arrow">
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </div>
+          </a>
+ 
+          <!-- Location (non-clickable) -->
+          <div class="connect-card connect-card--location">
+            <div class="connect-card__icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="connect-card__body">
+              <span class="connect-card__label">Based in</span>
+              <span class="connect-card__handle">Salé, Rabat — Morocco</span>
+            </div>
+            <div class="connect-card__arrow connect-card__arrow--pin">
+              <i class="fas fa-globe-africa"></i>
+            </div>
           </div>
-        </div>
-        <div class="contact__form-wrap">
-          <form id="contactForm" action="mail.php" method="POST" class="contact__form">
-            <div class="form-row">
-              <div class="form-field">
-                <label for="fullName">Full Name</label>
-                <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" required>
-              </div>
-              <div class="form-field">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="jane@example.com" required>
-              </div>
-            </div>
-            <div class="form-field">
-              <label for="phone">Phone (optional)</label>
-              <input type="tel" id="phone" name="phone" placeholder="+212 600 000 000">
-            </div>
-            <div class="form-field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary btn--full">
-              Send Message
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8l10 0M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-          </form>
+ 
         </div>
       </div>
     </div>
